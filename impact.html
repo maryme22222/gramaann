@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducere - Rolul Calculatorului în Viața Cotidiană</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Leckerli+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+      
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .logo h1 {
+            margin-right: auto;
+            font-size: 19px;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            z-index: 2000;
+        }
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+        nav {
+            flex-grow: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            nav.open {
+                display: block;
+            }
+            nav ul {
+                display: block;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .hero-text {
+                width: 90%;
+                padding: 10px;
+                font-size: 14px;
+            }
+            .arrow {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 20px 0;
+            
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Grama Ana</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="introducere.html">Introducere</a></li>
+                <li><a href="istoric.html">Istoric</a></li>
+                <li><a href="impact.html">Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <br>
+   <br>
+    <div class="content">
+        <p style="font-size: 2em; font-weight: bold;">Impact</p>
+        <p style="text-align: justify; text-indent: 30px;">Transformarea modului în care lucrăm: Calculatoarele au schimbat fundamental modul în care desfășurăm activitățile de lucru. Ele au introdus automatizarea în procesele de producție și de afaceri, accelerând ritmul de lucru și optimizând eficiența. De la utilizarea software-urilor specializate pentru managementul proiectelor și contabilitate, până la integrarea sistemelor informatice în lanțurile de aprovizionare și în activitățile administrative, calculatoarele sunt coloana vertebrală a economiei moderne.</p>
+
+        <img src="img2.webp" alt="Imagine ilustrativă" >
+        <p style="text-align: justify; text-indent: 30px;">Revigorarea comunicării și interacțiunii sociale: Calculatoarele și internetul au transformat modul în care comunicăm și interacționăm unii cu alții. Platformele de socializare online, serviciile de mesagerie instantanee și videoconferințele au redus distanțele și au deschis noi modalități de conectare cu persoane din întreaga lume. Astăzi, comunicarea este rapidă, accesibilă și ubicuă, facilitată de calculatoare și de tehnologiile lor asociate.</p>
+        <p style="text-align: justify; text-indent: 30px;">Revoluționarea divertismentului și culturii: Industria divertismentului și culturii a fost transformată de calculatoare și de tehnologia digitală asociată. De la jocuri video immersive și streaming de conținut media la producția de conținut creativ pe platforme online, calculatoarele au democratizat accesul la divertisment și au dat naștere unor noi forme de exprimare culturală și artistică.</p>
+        <p style="text-align: justify; text-indent: 30px;">Catalizator pentru inovație și progres tehnologic: Calculatoarele au fost motorul principal al inovației tehnologice în ultimele decenii. Ele au permis dezvoltarea de tehnologii noi și revoluționare, precum inteligența artificială, învățarea automată, realitatea virtuală și blockchain-ul. Aceste inovații au schimbat fundamental modul în care interacționăm cu lumea din jurul nostru și au deschis noi frontiere pentru descoperiri și progrese ulterioare.</p>
+        <p style="text-align: justify; text-indent: 30px;">Provocări și dileme asociate: Utilizarea extensivă a calculatoarelor vine și cu provocări și dileme. Securitatea cibernetică este o preocupare majoră, cu riscul de atacuri informatice și încălcări ale confidențialității datelor. Dependența excesivă de tehnologie poate duce la probleme de sănătate mentală și la izolare socială. De asemenea, există îngrijorări cu privire la impactul asupra mediului înconjurător, dată fiind producția și eliminarea deșeurilor electronice generate de utilizarea calculatoarelor.</p>
+
+    </div>
+    <footer>
+        <p>Drepturile de autor protejate © 2024</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

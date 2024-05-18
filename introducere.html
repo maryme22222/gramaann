@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducere - Rolul Calculatorului în Viața Cotidiană</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Leckerli+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 60px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .arrow {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            animation: arrowAnimation 1s infinite alternate;
+        }
+        @keyframes arrowAnimation {
+            0% {
+                bottom: 30px;
+            }
+            100% {
+                bottom: 40px;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            max-height: calc(100vh - 5px);
+            margin-bottom: -1px;
+            object-fit: cover;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .logo h1 {
+            margin-right: auto;
+            font-size: 19px;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            z-index: 2000;
+        }
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+        nav {
+            flex-grow: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            nav.open {
+                display: block;
+            }
+            nav ul {
+                display: block;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .hero-text {
+                width: 90%;
+                padding: 10px;
+                font-size: 14px;
+            }
+            .arrow {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Grama Ana</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="istoric.html">Istoric</a></li>
+                <li><a href="rol.html">Rol</a></li>
+                <li><a href="impact.html">Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <img src="calculator.png" alt="Imagine despre rolul calculatorului în viața cotidiană">
+        <div class="hero-text">
+            <h2>Rolul Calculatorului în Viața Cotidiană</h2>
+        </div>
+        <img class="arrow" src="angle.svg" alt="Săgeată indicând derularea în jos">
+    </div>
+    <div class="content">
+        <p style="font-size: 2em; font-weight: bold;">Introducere</p>
+        <p style="text-align: justify; text-indent: 30px;">Calculatoarele nu sunt doar simple obiecte tehnologice; ele reprezintă adevărate punți între lumea fizică și lumea digitală, deschizându-ne uși către o varietate de experiențe și oportunități. În fiecare zi, ne bazăm pe aceste dispozitive pentru a ne ajuta să navigăm prin lumea modernă, să ne conectăm cu ceilalți și să rezolvăm probleme complexe. Ele sunt temelia pe care se construiește progresul nostru colectiv, oferindu-ne mijloacele necesare pentru a explora noi frontiere în cunoaștere și inovație.</p>
+        <img src="img1.webp" alt="Imagine ilustrativă" style="width: 900px; height: 600px;">
+        <p style="text-align: justify; text-indent: 30px;">Indiferent dacă folosim un calculator de buzunar sau un server masiv în cloud, calculatoarele ne permit să accesăm informații din întreaga lume, să ne comunicăm cu oameni din cele mai îndepărtate colțuri ale globului și să creăm lucruri remarcabile. Ele sunt instrumentele noastre digitale de bază, instrumente care ne îmbunătățesc viața într-o varietate de moduri și care ne ajută să ne realizăm potențialul într-un mod mai eficient și mai eficace decât oricând înainte.</p>
+    </div>
+    <footer>
+        <p>Drepturile de autor protejate © 2024</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
